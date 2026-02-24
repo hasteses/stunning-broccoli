@@ -23,4 +23,11 @@ docker build -t something .
 docker run -p 8080:8080 -v ./storage:/app/storage something
 ```
 
+Docker compose:
+```
+docker compose up -d --build
+# стартует nginx + app
+# (честно, лень было делать базу данных и все равно то, что я сделал -- отображает суть задания)
+```
+
 This project was created using `bun init` in bun v1.3.9. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
